@@ -63,5 +63,13 @@ class iOS_TestTests: XCTestCase {
             // 計算したい処理を記載
         }
     }
+    
+    // これだけで良い
+    func test_足し算が行えること() {
+        viewController.loadViewIfNeeded()
+        XCTAssertEqual(viewController.add(1, 1), 2)
+        XCTAssertEqual(viewController.add(1, 2), 3)
+    }
 
 }
+
