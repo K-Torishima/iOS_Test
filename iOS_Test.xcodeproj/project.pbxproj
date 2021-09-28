@@ -15,6 +15,8 @@
 		7DF46ED12703246600BD76D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF46ECF2703246600BD76D2 /* LaunchScreen.storyboard */; };
 		7DF46EDC2703246600BD76D2 /* iOS_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF46EDB2703246600BD76D2 /* iOS_TestTests.swift */; };
 		7DF46EE72703246600BD76D2 /* iOS_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF46EE62703246600BD76D2 /* iOS_TestUITests.swift */; };
+		7DF46EF527035B2300BD76D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF46EF427035B2300BD76D2 /* User.swift */; };
+		7DF46EF627035B2300BD76D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF46EF427035B2300BD76D2 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		7DF46EE22703246600BD76D2 /* iOS_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF46EE62703246600BD76D2 /* iOS_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_TestUITests.swift; sourceTree = "<group>"; };
 		7DF46EE82703246600BD76D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF46EF427035B2300BD76D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 				7DF46ECD2703246600BD76D2 /* Assets.xcassets */,
 				7DF46ECF2703246600BD76D2 /* LaunchScreen.storyboard */,
 				7DF46ED22703246600BD76D2 /* Info.plist */,
+				7DF46EF427035B2300BD76D2 /* User.swift */,
 			);
 			path = iOS_Test;
 			sourceTree = "<group>";
@@ -259,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF46EC92703246500BD76D2 /* ViewController.swift in Sources */,
+				7DF46EF527035B2300BD76D2 /* User.swift in Sources */,
 				7DF46EC52703246500BD76D2 /* AppDelegate.swift in Sources */,
 				7DF46EC72703246500BD76D2 /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF46EDC2703246600BD76D2 /* iOS_TestTests.swift in Sources */,
+				7DF46EF627035B2300BD76D2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
