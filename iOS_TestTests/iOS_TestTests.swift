@@ -13,12 +13,15 @@ import XCTest
 class iOS_TestTests: XCTestCase {
     
     var user = User()
+    var viewController: ViewController!
     
     override func setUpWithError() throws {
         print("setUp")
-        // ここでインスタンスを書き換えたりできる、通る通らないがわかると良さそう
         user.age = 30
+        // ここでインスタンスを書き換えたりできる、通る通らないがわかると良さそう
         // テストの開始時に最初に呼ばれる関数、テストケースを回すために必要な設定やインスタンスの生成などをここで行う
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.viewController = storyboard.instantiateInitialViewController() as? ViewController
     }
 
     override func tearDownWithError() throws {
@@ -43,6 +46,14 @@ class iOS_TestTests: XCTestCase {
         XCTAssertFalse(user.isFemale)
         // 検査対象がnilかどうか
         XCTAssertNil(user.catName)
+        
+        // viewControllerが持っているSubクラスのメソッドの単体テスト
+        // ライフサイクルをトリガーとすることで初期化処理を実行できる
+        // ＊loadViewではViewdidloadは動かないのでここだとresultはnilになる
+        viewController.loadViewIfNeeded()
+        let subClass = viewController.subClass
+        let result = subClass?.multiply(num1: 7, num2: 28)
+        XCTAssertEqual(result, 196)
 
     }
 
