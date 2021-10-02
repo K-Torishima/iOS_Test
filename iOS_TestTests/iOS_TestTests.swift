@@ -70,6 +70,24 @@ class iOS_TestTests: XCTestCase {
         XCTAssertEqual(viewController.add(1, 1), 2)
         XCTAssertEqual(viewController.add(1, 2), 3)
     }
+    
+    // 「状態」の準備　インスタンス化テストに必要な「状態」セットする
+    var counter = Counter(count: 0)
+    
+    func test_counter() {
+        
+        // 「操作」を行う テスト対象のインスタンスに対して,incrementメソッドよ呼び出すという操作を行う
+        let result = counter.increment()
+        //result = counter.increment()
+        //result = counter.increment()
+        
+        // 「結果」の検証 incrementメソッドの戻り値が正しいこと、Counter構造体の内部状態が適切に変化しているかを検証している
+        // 「戻り値」の検証
+        XCTAssertEqual(result, 1)
+        
+        // 「状態変化」の検証
+        XCTAssertEqual(counter.count, 1)
+    }
 
 }
 
