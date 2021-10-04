@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DA68800270B490C00D15628 /* SampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA687FF270B490C00D15628 /* SampleTest.swift */; };
 		7DF46EC52703246500BD76D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF46EC42703246500BD76D2 /* AppDelegate.swift */; };
 		7DF46EC72703246500BD76D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF46EC62703246500BD76D2 /* SceneDelegate.swift */; };
 		7DF46EC92703246500BD76D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF46EC82703246500BD76D2 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DA687FF270B490C00D15628 /* SampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTest.swift; sourceTree = "<group>"; };
 		7DF46EC12703246500BD76D2 /* iOS_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF46EC42703246500BD76D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DF46EC62703246500BD76D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				7DF46EDB2703246600BD76D2 /* iOS_TestTests.swift */,
 				7DF46EDD2703246600BD76D2 /* Info.plist */,
+				7DA687FF270B490C00D15628 /* SampleTest.swift */,
 			);
 			path = iOS_TestTests;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				7DF46EDC2703246600BD76D2 /* iOS_TestTests.swift in Sources */,
 				7DF46EF627035B2300BD76D2 /* User.swift in Sources */,
+				7DA68800270B490C00D15628 /* SampleTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
