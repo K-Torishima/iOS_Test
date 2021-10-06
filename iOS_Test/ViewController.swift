@@ -15,11 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.subClass = SubClass(viewController: self)
         let result = subClass.multiply(num1: 12, num2: 23)
-        print(result)
+        // print(result)
         
         // これはよくある確認実行特にコミットしないもの
         // これはコミットに残せない
-        print(add(1, 2))
+        // print(add(1, 2))
         
         
         // デバック時にテストを自動で実行する
