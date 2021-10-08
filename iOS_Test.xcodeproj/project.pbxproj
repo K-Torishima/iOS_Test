@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D675B7227109B5400A59556 /* SampleCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SampleCode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7DA687FF270B490C00D15628 /* SampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTest.swift; sourceTree = "<group>"; };
 		7DF46EC12703246500BD76D2 /* iOS_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF46EC42703246500BD76D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		7DF46EB82703246500BD76D2 = {
 			isa = PBXGroup;
 			children = (
+				7D675B7227109B5400A59556 /* SampleCode.playground */,
 				7DF46EC32703246500BD76D2 /* iOS_Test */,
 				7DF46EDA2703246600BD76D2 /* iOS_TestTests */,
 				7DF46EE52703246600BD76D2 /* iOS_TestUITests */,

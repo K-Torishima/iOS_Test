@@ -193,4 +193,35 @@ class AsyncBadTests2: XCTestCase {
     }
 }
 
-// 例外テストからやる
+/*
+ // 例外テストについて
+ 例外テストはエラーハンドリングのテストを行うときに使う
+ どんなエラーが返却されるかはその後のロジックに関わるので
+ どんなエラーが返却されたかを確認するホワイトボックスなテストが必要になる
+ 
+ 例外のテストには、XCTAssertThrowError(expression:T)というアサーションメソッドを利用する
+ XCAssertThrowsError(expression:T)は、Error型を返却するクロージャを持ったインターフェースが用意されている
+ Error型を受けたクロージャの変数を、期待しているError型にキャストしてXCAssertEqualで比較する
+ */
+
+enum OperationError: Error {
+    case divisionByZero
+}
+
+// 0は割り算だと割れないので例外としてスローさせる
+func divide(_ x: Int, by y: Int) throws -> Int {
+    if y == 0 {
+        throw OperationError.divisionByZero
+    }
+    
+    return x / y
+}
+
+class ExceptionTests: XCTestCase {
+    func test_divideWhenDivisionByZero() {
+        XCTAssertThrowsError(try divide(10, by: 0)) { error in
+            let error = error as? OperationError
+            XCTAssertEqual(error, OperationError.divisionByZero)
+        }
+    }
+}
