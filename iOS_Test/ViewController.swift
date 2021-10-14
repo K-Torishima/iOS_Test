@@ -6,13 +6,28 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
     
     var subClass: SubClass!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // memo
+        // NSStringFromClass
+        // projectName
+        print(NSStringFromClass(type(of: self)).components(separatedBy: ".")[0])
+        // class name
+        print(NSStringFromClass(type(of: self)).components(separatedBy: ".")[1])
+        // class name
+        print(String(describing: self))
+        // file pass
+        print(#file)
+        // method
+        print(#function)
+        
+        
         self.subClass = SubClass(viewController: self)
         let result = subClass.multiply(num1: 12, num2: 23)
         // print(result)
@@ -331,6 +346,8 @@ XCTestは、公式にXUnitであるとは言っていないが、思想的には
  Swiftにおいては静的型付け言語なので、リフレクション
  
  */
+
+
 
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D4CC16227172336000360D3 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4CC16127172336000360D3 /* Protocols.swift */; };
 		7D6AD91E2715B55E00B22309 /* StubSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6AD91D2715B55E00B22309 /* StubSample.swift */; };
 		7D6AD9202715B9BA00B22309 /* MockSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6AD91F2715B9BA00B22309 /* MockSample.swift */; };
 		7DA68800270B490C00D15628 /* SampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA687FF270B490C00D15628 /* SampleTest.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D4CC16127172336000360D3 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		7D675B7227109B5400A59556 /* SampleCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SampleCode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7D6AD91D2715B55E00B22309 /* StubSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubSample.swift; sourceTree = "<group>"; };
 		7D6AD91F2715B9BA00B22309 /* MockSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSample.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				7DF46EC42703246500BD76D2 /* AppDelegate.swift */,
 				7DF46EC62703246500BD76D2 /* SceneDelegate.swift */,
 				7DF46EC82703246500BD76D2 /* ViewController.swift */,
+				7D4CC16127172336000360D3 /* Protocols.swift */,
 				7DF46ECA2703246500BD76D2 /* Main.storyboard */,
 				7DF46ECD2703246600BD76D2 /* Assets.xcassets */,
 				7DF46ECF2703246600BD76D2 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 				7DF46EC92703246500BD76D2 /* ViewController.swift in Sources */,
 				7DF46EF527035B2300BD76D2 /* User.swift in Sources */,
 				7DF46EC52703246500BD76D2 /* AppDelegate.swift in Sources */,
+				7D4CC16227172336000360D3 /* Protocols.swift in Sources */,
 				7DF46EC72703246500BD76D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
